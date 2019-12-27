@@ -1,0 +1,5 @@
+{
+  "extension-libraries": [
+    "techdivision/import-adapter-custom"
+  ]
+}

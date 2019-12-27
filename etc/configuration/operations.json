@@ -1,0 +1,43 @@
+{
+  "operations": {
+    "ce": {
+      "catalog_product": {
+        "add-update": {
+          "plugins": {
+            "subject": {
+              "id": "import.plugin.subject",
+              "subjects": [
+                {
+                  "id": "import_product.subject.bunch",
+                  "import-adapter": {
+                    "id": "import_adapter_custom.adapter.import.custom.factory"
+                  },
+                  "file-resolver": {
+                    "id": "import_adapter_custom.subject.file.resolver.url",
+                    "prefix": "product-import",
+                    "suffix": "html"
+                  },
+                  "params": {
+                    "copy-images": false,
+                    "clean-up-empty-columns": [
+                      "special_price",
+                      "special_price_from_date",
+                      "special_price_to_date"
+                    ]
+                  },
+                  "observers": [
+                    {
+                      "import": [
+                        "import_product.observer.composite.base.add_update"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

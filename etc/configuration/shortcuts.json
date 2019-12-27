@@ -1,0 +1,12 @@
+{
+  "shortcuts": {
+    "ce": {
+      "catalog_product": {
+        "add-update": [
+          "general/general/global-data",
+          "ce/catalog_product/add-update"
+        ]
+      }
+    }
+  }
+}

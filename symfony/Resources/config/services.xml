@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="import_adapter_custom.subject.file.resolver.url" class="TechDivision\Import\Adapter\Custom\Subjects\FileResolver\UrlFileResolver">
+            <argument type="service" id="import_app_simple.simple"/>
+            <argument type="service" id="import.processor.registry"/>
+        </service>
+
+        <service id="import_adapter_custom.adapter.import.custom.factory" class="TechDivision\Import\Adapter\Custom\Adapter\CustomImportAdapterFactory">
+            <argument type="service" id="service_container"/>
+        </service>
+        <service id="import_adapter_custom.adapter.import.custom" class="TechDivision\Import\Adapter\Custom\Adapter\CustomImportAdapter">
+            <argument type="service" id="import.adapter.lexer"/>
+            <argument type="service" id="import.adapter.interpreter"/>
+        </service>
+
+    </services>
+
+</container>
