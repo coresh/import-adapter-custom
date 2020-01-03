@@ -20,7 +20,6 @@
 
 namespace TechDivision\Import\Adapter\Custom\Utils;
 
-
 /**
  * Utility class containing the configuration keys.
  *

@@ -3,17 +3,17 @@
     "description": "M2IF library providing a basic Magento 2 array adapter import functionality",
     "license": "OSL-3.0",
     "require": {
-        "php": ">=5.6.0",
-        "paquettg/php-html-parser": "2.1.0",
-        "techdivision/import": "15.x-dev as 15.0.0"
+        "php": ">=7.1.0",
+        "techdivision/import": "15.*",
+        "paquettg/php-html-parser": "2.1.0"
     },
     "require-dev": {
         "doctrine/dbal": "2.5.*",
         "pdepend/pdepend": "2.5.2",
         "phpmd/phpmd": "@stable",
-        "phpunit/phpunit": "~5.0",
+        "phpunit/phpunit": "~6.5.0",
         "sebastian/phpcpd": "~3.0.0",
-        "squizlabs/php_codesniffer": "3.3.1",
+        "squizlabs/php_codesniffer": "~3.4.0",
         "consolidation/robo": "~1.0",
         "mikey179/vfsstream": "~1.0",
         "symfony/http-kernel": "~3.4"
