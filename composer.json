@@ -4,7 +4,7 @@
     "license": "OSL-3.0",
     "require": {
         "php": ">=7.1.0",
-        "techdivision/import": "15.*",
+        "techdivision/import": "16.*",
         "paquettg/php-html-parser": "2.1.0"
     },
     "require-dev": {
