@@ -2,9 +2,9 @@
   "shortcuts": {
     "ce": {
       "catalog_product": {
-        "add-update": [
+        "custom": [
           "general/general/global-data",
-          "ce/catalog_product/add-update"
+          "ce/catalog_product/custom"
         ]
       }
     }

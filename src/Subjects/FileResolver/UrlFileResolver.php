@@ -21,7 +21,7 @@
 namespace TechDivision\Import\Adapter\Custom\Subjects\FileResolver;
 
 use TechDivision\Import\Adapter\Custom\Utils\ConfigurationKeys;
-use TechDivision\Import\Subjects\FileResolver\SimpleFileResolver;
+use TechDivision\Import\Subjects\FileResolver\AbstractFileResolver;
 
 /**
  * File resolver to load the filenames from an URL.
@@ -32,7 +32,7 @@ use TechDivision\Import\Subjects\FileResolver\SimpleFileResolver;
  * @link      https://github.com/techdivision/import-adapter-custom
  * @link      http://www.techdivision.com
  */
-class UrlFileResolver extends SimpleFileResolver
+class UrlFileResolver extends AbstractFileResolver
 {
 
     /**
@@ -95,7 +95,7 @@ class UrlFileResolver extends SimpleFileResolver
      * @return array The array with the files matching the subjects suffix
      * @throws \Exception Is thrown, when the source directory is NOT available
      */
-    public function loadFiles($serial)
+    public function loadFiles(string $serial) : array
     {
 
         // initialize the resolver

@@ -3,7 +3,7 @@
 ## Requirements
 
 * PHP 7.2+
-* M2IF >= 3.8.0-beta2
+* M2IF >= 3.8.*
 
 ## Setup
 
@@ -39,7 +39,7 @@ You're now ready to run the custom adapter. Aassuming that the HTML file `data/s
 like `https://localhost/some.html` enter the following command 
 
 ```sh
-vendor/bin/import-simple import:products --params='{"params":{"url":"https://localhost/some.html"}}'
+vendor/bin/import-simple import:products custom --params='{"params":{"url":"https://localhost/some.html"}}'
 ```
 
 whereas the url has to point to the HTML file the additional data will be located in. 

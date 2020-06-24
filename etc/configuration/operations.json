@@ -2,7 +2,7 @@
   "operations": {
     "ce": {
       "catalog_product": {
-        "add-update": {
+        "custom": {
           "plugins": {
             "subject": {
               "id": "import.plugin.subject",
